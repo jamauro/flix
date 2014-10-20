@@ -10240,3 +10240,1622 @@ Processing by MoviesController#index as HTML
   Rendered layouts/_sidebar.html.erb (0.9ms)
   Rendered layouts/_footer.html.erb (0.7ms)
 Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:51:00.158663') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 11]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 9]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 10]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 8]]
+  Rendered movies/index.html.erb within layouts/application (33.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 42.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-10-19 15:51:00 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:51:08.190048') ORDER BY released_on desc
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 11]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 10]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 8]]
+  Rendered movies/index.html.erb within layouts/application (27.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 15:51:08 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 15:51:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:51:41.850297') ORDER BY released_on desc
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 11]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 9]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 10]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 8]]
+  Rendered movies/index.html.erb within layouts/application (70.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_flashes.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 234ms (Views: 213.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 15:51:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Robert Downey Jr., Gwyneth Paltrow and Terrence Howard"], ["created_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00], ["description", "When wealthy industrialist Tony Stark is forced to build an armored suit after a life-threatening incident, he ultimately decides to use its technology to fight against evil."], ["director", "Jon Favreau"], ["duration", "126 min"], ["image_file_name", "ironman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7ff2d4171a00,'0.318412101E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Christopher Reeve, Margot Kidder and Gene Hackman"], ["created_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00], ["description", "An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest super-hero."], ["director", "Richard Donner"], ["duration", "143 min"], ["image_file_name", "superman.jpg"], ["rating", "PG"], ["released_on", Fri, 15 Dec 1978], ["title", "Superman"], ["total_gross", #<BigDecimal:7ff2d41d8f98,'0.134218018E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Tobey Maguire, Kirsten Dunst and Willem Dafoe"], ["created_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00], ["description", "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family."], ["director", "Sam Raimi"], ["duration", "121 min"], ["image_file_name", "spiderman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 03 May 2002], ["title", "Spider-Man"], ["total_gross", #<BigDecimal:7ff2d420b600,'0.403706375E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Michael Keaton, Jack Nicholson and Kim Basinger"], ["created_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00], ["description", "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker."], ["director", "Tim Burton"], ["duration", "126 min"], ["image_file_name", "batman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jun 1989], ["title", "Batman"], ["total_gross", #<BigDecimal:7ff2d42389c0,'0.251188924E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Halle Berry, Sharon Stone and Benjamin Bratt"], ["created_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00], ["description", "Patience Philips seems destined to spend her life apologizing for taking up space. Despite her artistic ability&mdash;she has a more than respectable career as a graphic designer."], ["director", "Jean-Christophe 'Pitof' Comar"], ["duration", "101 min"], ["image_file_name", "catwoman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jul 2004], ["title", "Catwoman"], ["total_gross", #<BigDecimal:7ff2d4251ec0,'0.402E8',9(45)>], ["updated_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Bruce Wayne, Gojira"], ["created_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00], ["description", "An epic battle between The Caped Crusader and the fire-breathing dinosaur Gojira. Hang on to your popcorn, kids!"], ["director", "Ishiro Honda"], ["duration", "211 min"], ["image_file_name", "batman-vs-godzilla.jpg"], ["rating", "PG-13"], ["released_on", Wed, 29 Oct 2014], ["title", "Batman vs. Godzilla"], ["total_gross", #<BigDecimal:7ff2d4261ed8,'0.38762391E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Iron Man' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "I laughed, I cried, I spilled my popcorn!"], ["created_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00], ["movie_id", 1], ["name", "Roger Ebert"], ["stars", 3], ["updated_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["comment", "I'm a better reviewer than he is."], ["created_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00], ["movie_id", 1], ["name", "Gene Siskel"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's been years since a movie superhero was this fierce and this funny."], ["created_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00], ["movie_id", 1], ["name", "Peter Travers"], ["stars", 1], ["updated_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Superman' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's a bird, it's a plane, it's a blockbuster!"], ["created_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00], ["movie_id", 2], ["name", "Elvis Mitchell"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:52:08 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:52:25.440307') ORDER BY released_on desc
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 13]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 11]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 17]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 15]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 10]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 16]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 8]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 14]]
+  Rendered movies/index.html.erb within layouts/application (99.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_flashes.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 265ms (Views: 239.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:25 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:52:26 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:52:26 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:52:26 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:52:26 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:52:26 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 15:52:26 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-10-19 15:52:26 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-10-19 15:52:26 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-10-19 15:52:26 -0500
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "total_gross" decimal, "created_at" datetime, "updated_at" datetime, "description" text, "released_on" date, "cast" varchar(255), "director" varchar(255), "duration" varchar(255), "image_file_name" varchar(255)) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "stars" integer, "comment" text, "movie_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.2ms)[0m  [1mCREATE INDEX "index_reviews_on_movie_id" ON "reviews" ("movie_id")[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141014025551')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121121163535')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121121180707')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121210234158')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Robert Downey Jr., Gwyneth Paltrow and Terrence Howard"], ["created_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00], ["description", "When wealthy industrialist Tony Stark is forced to build an armored suit after a life-threatening incident, he ultimately decides to use its technology to fight against evil."], ["director", "Jon Favreau"], ["duration", "126 min"], ["image_file_name", "ironman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7f871c951618,'0.318412101E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Christopher Reeve, Margot Kidder and Gene Hackman"], ["created_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00], ["description", "An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest super-hero."], ["director", "Richard Donner"], ["duration", "143 min"], ["image_file_name", "superman.jpg"], ["rating", "PG"], ["released_on", Fri, 15 Dec 1978], ["title", "Superman"], ["total_gross", #<BigDecimal:7f871c9b8cc8,'0.134218018E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Tobey Maguire, Kirsten Dunst and Willem Dafoe"], ["created_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00], ["description", "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family."], ["director", "Sam Raimi"], ["duration", "121 min"], ["image_file_name", "spiderman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 03 May 2002], ["title", "Spider-Man"], ["total_gross", #<BigDecimal:7f871c9eb358,'0.403706375E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Michael Keaton, Jack Nicholson and Kim Basinger"], ["created_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00], ["description", "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker."], ["director", "Tim Burton"], ["duration", "126 min"], ["image_file_name", "batman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jun 1989], ["title", "Batman"], ["total_gross", #<BigDecimal:7f871ca18790,'0.251188924E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Halle Berry, Sharon Stone and Benjamin Bratt"], ["created_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00], ["description", "Patience Philips seems destined to spend her life apologizing for taking up space. Despite her artistic ability&mdash;she has a more than respectable career as a graphic designer."], ["director", "Jean-Christophe 'Pitof' Comar"], ["duration", "101 min"], ["image_file_name", "catwoman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jul 2004], ["title", "Catwoman"], ["total_gross", #<BigDecimal:7f871ca31da8,'0.402E8',9(45)>], ["updated_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Bruce Wayne, Gojira"], ["created_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00], ["description", "An epic battle between The Caped Crusader and the fire-breathing dinosaur Gojira. Hang on to your popcorn, kids!"], ["director", "Ishiro Honda"], ["duration", "211 min"], ["image_file_name", "batman-vs-godzilla.jpg"], ["rating", "PG-13"], ["released_on", Wed, 29 Oct 2014], ["title", "Batman vs. Godzilla"], ["total_gross", #<BigDecimal:7f871ca41dc0,'0.38762391E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Iron Man' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "I laughed, I cried, I spilled my popcorn!"], ["created_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00], ["movie_id", 1], ["name", "Roger Ebert"], ["stars", 3], ["updated_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["comment", "I'm a better reviewer than he is."], ["created_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00], ["movie_id", 1], ["name", "Gene Siskel"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's been years since a movie superhero was this fierce and this funny."], ["created_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00], ["movie_id", 1], ["name", "Peter Travers"], ["stars", 1], ["updated_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Superman' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's a bird, it's a plane, it's a blockbuster!"], ["created_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00], ["movie_id", 2], ["name", "Elvis Mitchell"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:52:46 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 15:52:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:52:53.130228') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 13]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 19]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 11]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 17]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 23]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 9]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 15]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 21]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 10]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 16]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 22]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 8]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 14]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 20]]
+  Rendered movies/index.html.erb within layouts/application (89.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_flashes.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 256ms (Views: 227.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 15:52:53 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:52:56.330929') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 13]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 19]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 11]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 17]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 23]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 15]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 21]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 10]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 16]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 22]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 8]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 14]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 20]]
+  Rendered movies/index.html.erb within layouts/application (45.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 60ms (Views: 55.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 15:52:56 -0500
+  [1m[36m (4.5ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "total_gross" decimal, "created_at" datetime, "updated_at" datetime, "description" text, "released_on" date, "cast" varchar(255), "director" varchar(255), "duration" varchar(255), "image_file_name" varchar(255)) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "stars" integer, "comment" text, "movie_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.3ms)[0m  [1mCREATE INDEX "index_reviews_on_movie_id" ON "reviews" ("movie_id")[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141014025551')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121121163535')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121121180707')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121210234158')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Robert Downey Jr., Gwyneth Paltrow and Terrence Howard"], ["created_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00], ["description", "When wealthy industrialist Tony Stark is forced to build an armored suit after a life-threatening incident, he ultimately decides to use its technology to fight against evil."], ["director", "Jon Favreau"], ["duration", "126 min"], ["image_file_name", "ironman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7fa0be02b5c8,'0.318412101E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Christopher Reeve, Margot Kidder and Gene Hackman"], ["created_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00], ["description", "An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest super-hero."], ["director", "Richard Donner"], ["duration", "143 min"], ["image_file_name", "superman.jpg"], ["rating", "PG"], ["released_on", Fri, 15 Dec 1978], ["title", "Superman"], ["total_gross", #<BigDecimal:7fa0be058cd0,'0.134218018E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Tobey Maguire, Kirsten Dunst and Willem Dafoe"], ["created_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00], ["description", "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family."], ["director", "Sam Raimi"], ["duration", "121 min"], ["image_file_name", "spiderman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 03 May 2002], ["title", "Spider-Man"], ["total_gross", #<BigDecimal:7fa0be068b58,'0.403706375E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Michael Keaton, Jack Nicholson and Kim Basinger"], ["created_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00], ["description", "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker."], ["director", "Tim Burton"], ["duration", "126 min"], ["image_file_name", "batman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jun 1989], ["title", "Batman"], ["total_gross", #<BigDecimal:7fa0be078990,'0.251188924E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Halle Berry, Sharon Stone and Benjamin Bratt"], ["created_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00], ["description", "Patience Philips seems destined to spend her life apologizing for taking up space. Despite her artistic ability&mdash;she has a more than respectable career as a graphic designer."], ["director", "Jean-Christophe 'Pitof' Comar"], ["duration", "101 min"], ["image_file_name", "catwoman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jul 2004], ["title", "Catwoman"], ["total_gross", #<BigDecimal:7fa0be088598,'0.402E8',9(45)>], ["updated_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Bruce Wayne, Gojira"], ["created_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00], ["description", "An epic battle between The Caped Crusader and the fire-breathing dinosaur Gojira. Hang on to your popcorn, kids!"], ["director", "Ishiro Honda"], ["duration", "211 min"], ["image_file_name", "batman-vs-godzilla.jpg"], ["rating", "PG-13"], ["released_on", Wed, 29 Oct 2014], ["title", "Batman vs. Godzilla"], ["total_gross", #<BigDecimal:7fa0be0985b0,'0.38762391E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Iron Man' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "I laughed, I cried, I spilled my popcorn!"], ["created_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00], ["movie_id", 1], ["name", "Roger Ebert"], ["stars", 3], ["updated_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["comment", "I'm a better reviewer than he is."], ["created_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00], ["movie_id", 1], ["name", "Gene Siskel"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's been years since a movie superhero was this fierce and this funny."], ["created_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00], ["movie_id", 1], ["name", "Peter Travers"], ["stars", 1], ["updated_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Superman' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's a bird, it's a plane, it's a blockbuster!"], ["created_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00], ["movie_id", 2], ["name", "Elvis Mitchell"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:53:12 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "total_gross" decimal, "created_at" datetime, "updated_at" datetime, "description" text, "released_on" date, "cast" varchar(255), "director" varchar(255), "duration" varchar(255), "image_file_name" varchar(255)) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "stars" integer, "comment" text, "movie_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.2ms)[0m  [1mCREATE INDEX "index_reviews_on_movie_id" ON "reviews" ("movie_id")[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141014025551')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121121163535')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121121180707')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121210234158')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Robert Downey Jr., Gwyneth Paltrow and Terrence Howard"], ["created_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00], ["description", "When wealthy industrialist Tony Stark is forced to build an armored suit after a life-threatening incident, he ultimately decides to use its technology to fight against evil."], ["director", "Jon Favreau"], ["duration", "126 min"], ["image_file_name", "ironman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7f84bf1a1698,'0.318412101E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Christopher Reeve, Margot Kidder and Gene Hackman"], ["created_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00], ["description", "An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest super-hero."], ["director", "Richard Donner"], ["duration", "143 min"], ["image_file_name", "superman.jpg"], ["rating", "PG"], ["released_on", Fri, 15 Dec 1978], ["title", "Superman"], ["total_gross", #<BigDecimal:7f84bf208d48,'0.134218018E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Tobey Maguire, Kirsten Dunst and Willem Dafoe"], ["created_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00], ["description", "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family."], ["director", "Sam Raimi"], ["duration", "121 min"], ["image_file_name", "spiderman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 03 May 2002], ["title", "Spider-Man"], ["total_gross", #<BigDecimal:7f84bf23b3d8,'0.403706375E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Michael Keaton, Jack Nicholson and Kim Basinger"], ["created_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00], ["description", "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker."], ["director", "Tim Burton"], ["duration", "126 min"], ["image_file_name", "batman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jun 1989], ["title", "Batman"], ["total_gross", #<BigDecimal:7f84bf268810,'0.251188924E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Halle Berry, Sharon Stone and Benjamin Bratt"], ["created_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00], ["description", "Patience Philips seems destined to spend her life apologizing for taking up space. Despite her artistic ability&mdash;she has a more than respectable career as a graphic designer."], ["director", "Jean-Christophe 'Pitof' Comar"], ["duration", "101 min"], ["image_file_name", "catwoman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jul 2004], ["title", "Catwoman"], ["total_gross", #<BigDecimal:7f84bf281e28,'0.402E8',9(45)>], ["updated_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Bruce Wayne, Gojira"], ["created_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00], ["description", "An epic battle between The Caped Crusader and the fire-breathing dinosaur Gojira. Hang on to your popcorn, kids!"], ["director", "Ishiro Honda"], ["duration", "211 min"], ["image_file_name", "batman-vs-godzilla.jpg"], ["rating", "PG-13"], ["released_on", Wed, 29 Oct 2014], ["title", "Batman vs. Godzilla"], ["total_gross", #<BigDecimal:7f84bf291e40,'0.38762391E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Iron Man' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "I laughed, I cried, I spilled my popcorn!"], ["created_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00], ["movie_id", 1], ["name", "Roger Ebert"], ["stars", 3], ["updated_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["comment", "I'm a better reviewer than he is."], ["created_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00], ["movie_id", 1], ["name", "Gene Siskel"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's been years since a movie superhero was this fierce and this funny."], ["created_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00], ["movie_id", 1], ["name", "Peter Travers"], ["stars", 1], ["updated_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Superman' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's a bird, it's a plane, it's a blockbuster!"], ["created_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00], ["movie_id", 2], ["name", "Elvis Mitchell"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:53:23 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:53:30.616936') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 11]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 10]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 8]]
+  Rendered movies/index.html.erb within layouts/application (67.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_flashes.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 232ms (Views: 206.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 15:53:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 15:53:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 15:53:31 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 15:53:31 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:53:31 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:53:31 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:53:31 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:53:31 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:53:31 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 15:53:31 -0500
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-10-19 15:53:38 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT 2) subquery_for_count[0m  [["movie_id", 1]]
+  [1m[35mReview Load (0.3ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ? ORDER BY created_at desc LIMIT 2  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered shared/_errors.html.erb (1.9ms)
+  Rendered reviews/_form.html.erb (13.3ms)
+  Rendered movies/show.html.erb within layouts/application (26.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_flashes.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 39.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:53:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 15:53:42 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:53:42.386507') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 11]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 10]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 8]]
+  Rendered movies/index.html.erb within layouts/application (23.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_flashes.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 58ms (Views: 33.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:53:42 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:53:42 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:53:42 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:53:42 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:53:42 -0500
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "total_gross" decimal, "created_at" datetime, "updated_at" datetime, "description" text, "released_on" date, "cast" varchar(255), "director" varchar(255), "duration" varchar(255), "image_file_name" varchar(255)) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "stars" integer, "comment" text, "movie_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.3ms)[0m  [1mCREATE INDEX "index_reviews_on_movie_id" ON "reviews" ("movie_id")[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141014025551')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121121163535')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121121180707')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121210234158')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Robert Downey Jr., Gwyneth Paltrow and Terrence Howard"], ["created_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00], ["description", "When wealthy industrialist Tony Stark is forced to build an armored suit after a life-threatening incident, he ultimately decides to use its technology to fight against evil."], ["director", "Jon Favreau"], ["duration", "126 min"], ["image_file_name", "ironman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7f84872fb670,'0.318412101E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Christopher Reeve, Margot Kidder and Gene Hackman"], ["created_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00], ["description", "An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest super-hero."], ["director", "Richard Donner"], ["duration", "143 min"], ["image_file_name", "superman.jpg"], ["rating", "PG"], ["released_on", Fri, 15 Dec 1978], ["title", "Superman"], ["total_gross", #<BigDecimal:7f8487328d78,'0.134218018E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Tobey Maguire, Kirsten Dunst and Willem Dafoe"], ["created_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00], ["description", "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family."], ["director", "Sam Raimi"], ["duration", "121 min"], ["image_file_name", "spiderman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 03 May 2002], ["title", "Spider-Man"], ["total_gross", #<BigDecimal:7f8487338c00,'0.403706375E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Michael Keaton, Jack Nicholson and Kim Basinger"], ["created_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00], ["description", "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker."], ["director", "Tim Burton"], ["duration", "126 min"], ["image_file_name", "batman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jun 1989], ["title", "Batman"], ["total_gross", #<BigDecimal:7f8487348a38,'0.251188924E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Halle Berry, Sharon Stone and Benjamin Bratt"], ["created_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00], ["description", "Patience Philips seems destined to spend her life apologizing for taking up space. Despite her artistic ability&mdash;she has a more than respectable career as a graphic designer."], ["director", "Jean-Christophe 'Pitof' Comar"], ["duration", "101 min"], ["image_file_name", "catwoman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jul 2004], ["title", "Catwoman"], ["total_gross", #<BigDecimal:7f8487358640,'0.402E8',9(45)>], ["updated_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Bruce Wayne, Gojira"], ["created_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00], ["description", "An epic battle between The Caped Crusader and the fire-breathing dinosaur Gojira. Hang on to your popcorn, kids!"], ["director", "Ishiro Honda"], ["duration", "211 min"], ["image_file_name", "batman-vs-godzilla.jpg"], ["rating", "PG-13"], ["released_on", Wed, 29 Oct 2014], ["title", "Batman vs. Godzilla"], ["total_gross", #<BigDecimal:7f8487368658,'0.38762391E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Iron Man' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "I laughed, I cried, I spilled my popcorn!"], ["created_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00], ["movie_id", 1], ["name", "Roger Ebert"], ["stars", 3], ["updated_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["comment", "I'm a better reviewer than he is."], ["created_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00], ["movie_id", 1], ["name", "Gene Siskel"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's been years since a movie superhero was this fierce and this funny."], ["created_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00], ["movie_id", 1], ["name", "Peter Travers"], ["stars", 1], ["updated_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Superman' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's a bird, it's a plane, it's a blockbuster!"], ["created_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00], ["movie_id", 2], ["name", "Elvis Mitchell"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:54:31 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 15:54:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:54:39.010785') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (55.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_flashes.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 218ms (Views: 196.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 15:54:39 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-10-19 15:54:55 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:54:55.047615') ORDER BY released_on desc
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_flashes.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:54:55 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:54:55 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:54:55 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:54:55 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:54:55 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:55:21.472308') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 15:55:21 -0500
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "total_gross" decimal, "created_at" datetime, "updated_at" datetime, "description" text, "released_on" date, "cast" varchar(255), "director" varchar(255), "duration" varchar(255), "image_file_name" varchar(255)) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "stars" integer, "comment" text, "movie_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.2ms)[0m  [1mCREATE INDEX "index_reviews_on_movie_id" ON "reviews" ("movie_id")[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141014025551')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121121163535')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121121180707')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121210234158')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Robert Downey Jr., Gwyneth Paltrow and Terrence Howard"], ["created_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00], ["description", "When wealthy industrialist Tony Stark is forced to build an armored suit after a life-threatening incident, he ultimately decides to use its technology to fight against evil."], ["director", "Jon Favreau"], ["duration", "126 min"], ["image_file_name", "ironman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7f8c8af63650,'0.318412101E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Christopher Reeve, Margot Kidder and Gene Hackman"], ["created_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00], ["description", "An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest super-hero."], ["director", "Richard Donner"], ["duration", "143 min"], ["image_file_name", "superman.jpg"], ["rating", "PG"], ["released_on", Fri, 15 Dec 1978], ["title", "Superman"], ["total_gross", #<BigDecimal:7f8c8af90d58,'0.134218018E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Tobey Maguire, Kirsten Dunst and Willem Dafoe"], ["created_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00], ["description", "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family."], ["director", "Sam Raimi"], ["duration", "121 min"], ["image_file_name", "spiderman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 03 May 2002], ["title", "Spider-Man"], ["total_gross", #<BigDecimal:7f8c8afa0be0,'0.403706375E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Michael Keaton, Jack Nicholson and Kim Basinger"], ["created_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00], ["description", "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker."], ["director", "Tim Burton"], ["duration", "126 min"], ["image_file_name", "batman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jun 1989], ["title", "Batman"], ["total_gross", #<BigDecimal:7f8c8afb0a18,'0.251188924E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Halle Berry, Sharon Stone and Benjamin Bratt"], ["created_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00], ["description", "Patience Philips seems destined to spend her life apologizing for taking up space. Despite her artistic ability, she has a more than respectable career as a graphic designer."], ["director", "Jean-Christophe 'Pitof' Comar"], ["duration", "101 min"], ["image_file_name", "catwoman.jpg"], ["rating", "PG-13"], ["released_on", Fri, 23 Jul 2004], ["title", "Catwoman"], ["total_gross", #<BigDecimal:7f8c8afc0620,'0.402E8',9(45)>], ["updated_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Bruce Wayne, Gojira"], ["created_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00], ["description", "An epic battle between The Caped Crusader and the fire-breathing dinosaur Gojira. Hang on to your popcorn, kids!"], ["director", "Ishiro Honda"], ["duration", "211 min"], ["image_file_name", "batman-vs-godzilla.jpg"], ["rating", "PG-13"], ["released_on", Wed, 29 Oct 2014], ["title", "Batman vs. Godzilla"], ["total_gross", #<BigDecimal:7f8c8afd0638,'0.38762391E9',9(36)>], ["updated_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Iron Man' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "I laughed, I cried, I spilled my popcorn!"], ["created_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00], ["movie_id", 1], ["name", "Roger Ebert"], ["stars", 3], ["updated_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["comment", "I'm a better reviewer than he is."], ["created_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00], ["movie_id", 1], ["name", "Gene Siskel"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's been years since a movie superhero was this fierce and this funny."], ["created_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00], ["movie_id", 1], ["name", "Peter Travers"], ["stars", 1], ["updated_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Superman' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "It's a bird, it's a plane, it's a blockbuster!"], ["created_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00], ["movie_id", 2], ["name", "Elvis Mitchell"], ["stars", 5], ["updated_at", Sun, 19 Oct 2014 20:55:30 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-10-19 15:55:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-19 20:55:40.856793') ORDER BY released_on desc
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (59.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_flashes.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 218ms (Views: 196.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-10-19 15:55:41 -0500
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2014-10-19 15:55:48 -0500
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered reviews/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_flashes.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-10-19 15:55:50 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT 2) subquery_for_count  [["movie_id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ? ORDER BY created_at desc LIMIT 2[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  Rendered shared/_errors.html.erb (1.9ms)
+  Rendered reviews/_form.html.erb (37.3ms)
+  Rendered movies/show.html.erb within layouts/application (49.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-10-19 15:55:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddExtraImageFieldsToMovies (20141020010606)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "movies" ADD "image_content_type" varchar(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "movies" ADD "image_file_size" integer
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "movies" ADD "image_updated_at" datetime[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141020010606"]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 20:17:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fd3f28a1c40>):
+  app/models/movie.rb:3:in `<class:Movie>'
+  app/models/movie.rb:1:in `<top (required)>'
+  app/controllers/movies_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 20:18:58 -0500
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fd3f6153688>):
+  app/models/movie.rb:3:in `<class:Movie>'
+  app/models/movie.rb:1:in `<top (required)>'
+  app/controllers/movies_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 20:19:01 -0500
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fd3f61e38f0>):
+  app/models/movie.rb:3:in `<class:Movie>'
+  app/models/movie.rb:1:in `<top (required)>'
+  app/controllers/movies_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 20:21:59 -0500
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fd3f422bad0>):
+  app/models/movie.rb:3:in `<class:Movie>'
+  app/models/movie.rb:1:in `<top (required)>'
+  app/controllers/movies_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.0.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-19 20:24:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-20 01:24:39.880117') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (71.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_flashes.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 257ms (Views: 195.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/placeholder.png" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-10-19 20:24:40 -0500
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-10-19 20:24:43 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT 2) subquery_for_count  [["movie_id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ? ORDER BY created_at desc LIMIT 2[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  Rendered shared/_errors.html.erb (6.1ms)
+  Rendered reviews/_form.html.erb (20.8ms)
+  Rendered movies/show.html.erb within layouts/application (35.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_flashes.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 50.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2014-10-19 20:24:49 -0500
+Processing by MoviesController#new as HTML
+  Rendered shared/_errors.html.erb (0.1ms)
+  Rendered movies/_form.html.erb (58.2ms)
+  Rendered movies/new.html.erb within layouts/application (59.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-10-19 20:24:57 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-20 01:24:57.310462') ORDER BY released_on desc[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (21.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-10-19 20:25:31 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT 2) subquery_for_count[0m  [["movie_id", 1]]
+  [1m[35mReview Load (0.3ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ? ORDER BY created_at desc LIMIT 2  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  Rendered reviews/_form.html.erb (5.4ms)
+  Rendered movies/show.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/movies/1/edit" for 127.0.0.1 at 2014-10-19 20:25:34 -0500
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  Rendered movies/_form.html.erb (8.3ms)
+  Rendered movies/edit.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/movies/1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D/JXImXKSvbpILVtN2Pn/qP4adfW4I/sBEHMKDml3hw=", "movie"=>{"title"=>"Iron Man", "description"=>"When wealthy industrialist Tony Stark is forced to build an armored suit after a life-threatening incident, he ultimately decides to use its technology to fight against evil.", "rating"=>"PG-13", "released_on(1i)"=>"2008", "released_on(2i)"=>"5", "released_on(3i)"=>"2", "total_gross"=>"318412101", "duration"=>"126 min", "cast"=>"Robert Downey Jr., Gwyneth Paltrow and Terrence Howard", "director"=>"Jon Favreau", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fd47b725400 @tempfile=#<Tempfile:/var/folders/gq/mj7w0hmj6tb6751dhcl9x3mh0000gn/T/RackMultipart20141019-1607-17y87uq>, @original_filename="ironman.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[image]\"; filename=\"ironman.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Movie", "id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/gq/mj7w0hmj6tb6751dhcl9x3mh0000gn/T/0d94d92e3dc096f64213a5b34fa9d09820141019-1607-e54y99.jpg'
+Command :: file -b --mime '/var/folders/gq/mj7w0hmj6tb6751dhcl9x3mh0000gn/T/0d94d92e3dc096f64213a5b34fa9d09820141019-1607-1j694sd.jpg'
+Binary data inserted for `string` type on column `image_content_type`
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "movies" SET "image_content_type" = ?, "image_file_size" = ?, "image_updated_at" = ?, "image_file_name" = ?, "updated_at" = ? WHERE "movies"."id" = 1[0m  [["image_content_type", "image/jpeg"], ["image_file_size", 9511], ["image_updated_at", Mon, 20 Oct 2014 01:25:57 UTC +00:00], ["image_file_name", "ironman.jpg"], ["updated_at", Mon, 20 Oct 2014 01:25:57 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/1
+Completed 302 Found in 86ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT 2) subquery_for_count[0m  [["movie_id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ? ORDER BY created_at desc LIMIT 2  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered reviews/_form.html.erb (5.1ms)
+  Rendered movies/show.html.erb within layouts/application (16.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 20:25:57 -0500
+
+
+Started GET "/movies/1/edit" for 127.0.0.1 at 2014-10-19 20:26:06 -0500
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  Rendered movies/_form.html.erb (59.9ms)
+  Rendered movies/edit.html.erb within layouts/application (60.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 70.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies/1/edit" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  Rendered movies/_form.html.erb (10.4ms)
+  Rendered movies/edit.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-19 20:27:02 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-10-19 20:27:38 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-10-20 01:27:38.264266') ORDER BY released_on desc
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (20.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_flashes.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 1.0ms)

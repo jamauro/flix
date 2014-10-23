@@ -1,6 +1,9 @@
 class Movie < ActiveRecord::Base
   has_many :reviews, dependent: :destroy # dependent destroy deletes reviews associated with movie if the movie gets deleted
-  has_attached_file :image
+  has_attached_file :image, styles: {
+    small: "90x133>",
+    thumb: "50x50>"
+  }
 
   RATINGS = %w(G PG PG-13 R NC-17)
 

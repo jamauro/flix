@@ -2,5 +2,9 @@
   <h1>New Review for <%= link_to(@movie.title, @movie) %></h1>
 </header>
 
+<p>
+      Read all <%= link_to pluralize(@movie.reviews.size, 'review'),
+                      movie_reviews_path(@movie) %>
+</p>
 
 <%= render 'form' %>

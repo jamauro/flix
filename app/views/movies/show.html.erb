@@ -48,13 +48,13 @@
       <% end %>
     </ol>
     <p>
-      Read all <%= link_to pluralize(@movie.reviews.size, "review"),
+      Read all <%= link_to pluralize(@movie.reviews.size, 'review'),
                       movie_reviews_path(@movie) %>
     </p>
   <% end %>
 
   <h3>Write a Review</h3>
-  <%= render 'reviews/form' %>
+ <%= render 'reviews/form' %>
 
   <footer>
     <%-# <%= link_to 'Write Review', new_movie_review_path(@movie), class: 'button ok review' %>
